@@ -224,12 +224,14 @@ section.home .bg_images {
   width: 100%;
   height: 100%;
 }
-section.home img {
+
+section.home .bg_images img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .fade {
   animation-name: fade;
