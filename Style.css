@@ -638,6 +638,7 @@ section.projects .projects_cat p:hover {
 section.projects .projects_list {
   width: 100%;
   text-align: center;
+  margin-top: 3rem;
 }
 section.projects .project {
   cursor: pointer;
