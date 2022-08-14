@@ -130,7 +130,6 @@ nav > img {
   object-fit: contain;
   margin: 3rem auto 1rem auto;
   border: 5px solid var(--pr-blue);
-  /* box-shadow: 0 0 25px 1px rgb(170, 215, 243); */
   border-radius: 5rem;
 }
 .social_links {
