@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAM</title>
+    <title>HAM Solutions</title>
     <link rel="shortcut icon" href="./Images/assets/" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./Images/assets/logo.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="./Style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -25,23 +25,28 @@
         </div>
     </div>
     <nav>
-        <img src="./Images/assets/LogoPic.png" alt="profile">
-        <h2>H.A.M</h2>
+        <img src="./Images/assets/logo.png" alt="profile">
+        <h2>H.A.M Solutions</h2>
         <div class="social_links">
-            <img src="./Images/Icons/bxl-dribbble.svg" alt="">
-            <img src="./Images/Icons/bxl-facebook.svg" alt="">
-            <img src="./Images/Icons/bxl-instagram.svg" alt="">
-            <img src="./Images/Icons/bxl-linkedin.svg" alt="">
-            <img src="./Images/Icons/bxl-twitter.svg" alt="">
+            <a href="" target="_blank"> <img src="./Images/Icons/bxl-linkedin.svg" alt="bxl-linkedin"></a>
+            <a href="https://www.google.com" target="_blank"><img src="./Images/Icons/bxl-twitter.svg"
+                    alt="bxl-twitter"></a>
+            <a href="https://www.facebook.com/profile.php?id=100082953423404" target="_blank">
+                <img src="./Images/Icons/bxl-facebook.svg" alt="bxl-facebook">
+            </a>
+            <a href="https://github.com/HAM-Developer" target="_blank"><img src="./Images/Icons/bi_github.svg"
+                    alt="bxl-dribbble"></a>
+            <a href="https://www.fiverr.com/ham_developer1" target="_blank"><img src="./Images/Icons/jam_fiverr.svg"
+                    alt="jam_fiverr"></a>
         </div>
-        <div class="links">
+        <ul class="links">
             <li><a href="#home" class=" active_link link"><i class='bx bx-home active_linkIcon  nav_linkIcon'> </i>
                     Home</a></li>
             <li><a href="#about" class="link"><i class='bx bx-user nav_linkIcon'> </i> About</a></li>
             <li><a href="#services" class="link"><i class='bx bx-server nav_linkIcon'> </i> Services</a></li>
             <li><a href="#projects" class="link"> <i class='bx bx-book-content nav_linkIcon'> </i>Projects</a></li>
             <li><a href="#contact" class="link"><i class='bx bx-envelope nav_linkIcon'> </i> Contact</a></li>
-        </div>
+        </ul>
         <footer>
             <p><span class="copyright">&copy;</span> Copyright <span class="year">2022</span></p>
             <p>
@@ -52,7 +57,7 @@
 
     <header>
         <a href="/">
-            <img class="logo" src="./Images/assets/logo.png" alt="">
+            <img class="logo" src="./Images/assets/LogoPic.png" alt="Logo">
         </a>
         <div class="hamburger">
             <div class="line"></div>
@@ -63,7 +68,7 @@
 
     <section id="home" class="home">
         <div class="bg_images">
-            <img src="./Images/assets/bgImage.jpg" alt="" srcset="">
+            <img src="./Images/assets/bgImage-min.jpg" alt="Background-Image">
         </div>
         <div class="intro">
             <h1 data-aos="fade-up">Hello there<span>!</span></h1>
@@ -87,17 +92,17 @@
                         also
                         provides satisfaction.</p>
                     <div class="about_container">
-                        <img src="./Images/assets/amico.svg" alt="" data-aos="fade-up">
+                        <img src="./Images/assets/amico.svg" alt="amico" data-aos="fade-up">
                         <div class="about_wrapper" data-aos="fade-up">
                             <h2>Frontend Developer</h2>
-                            <div class="about_me_info">
+                            <ul class="about_me_info">
                                 <li>
                                     <i class='bx bx-chevron-right'></i>
                                     <p>Country<strong>:</strong> <span>Pakistan</span> </p>
                                 </li>
                                 <li>
                                     <i class='bx bx-chevron-right'></i>
-                                    <p></i>Occupation<strong>:</strong> <span>Freelancer</span> </p>
+                                    <p>Occupation<strong>:</strong> <span>Freelancer</span> </p>
                                 </li>
                                 <li>
                                     <i class='bx bx-chevron-right'></i>
@@ -107,7 +112,7 @@
                                     <i class='bx bx-chevron-right'></i>
                                     <p>Study<strong>:</strong> <span>Yes</span> </p>
                                 </li>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -125,7 +130,6 @@
                         <h3>HTML</h3>
                     </div>
                     <div class="about_skill">
-
                         <div class="skill_progress" data-aos="fade-up" data-aos-delay="200">
                             <svg>
                                 <circle class="circle2 circle0" cx="70" cy="70" r="65" />
@@ -138,7 +142,6 @@
                         <h3>CSS</h3>
                     </div>
                     <div class="about_skill">
-
                         <div class="skill_progress" data-aos="fade-up" data-aos-delay="300">
                             <svg>
                                 <circle class="circle3 circle0" cx="70" cy="70" r="65" />
@@ -169,86 +172,84 @@
             <div class="container">
                 <h2>SERVICES</h2>
                 <div class="service_info">
-                    <h1>WHAT I DO?</h1>
                     <div class="service_info_list">
                         <div class="service_info_cat" data-aos="fade-up" data-aos-delay="100">
                             <img src="./Images/assets/responsive.svg" alt="responsive-website-img">
-                            <h3>RESPONVSIVE DESIGN</h3>
+                            <h3>RESPONSIVE DESIGN</h3>
                             <p>Utilize modern tools like media queries, Flexbox, and CSS Grid to create pixel-perfect
                                 websites.
                             </p>
                         </div>
                         <div class="service_info_cat" data-aos="fade-up" data-aos-delay="200">
-                            <img src="./Images/assets/animation.svg" alt="">
+                            <img src="./Images/assets/animation.svg" alt="animation-image">
                             <h3>WEBSITE ANIMATION</h3>
                             <p>Enhance the website's UX/UI with appealing website animation using CSS, and SVG
                                 animation.
                             </p>
                         </div>
                         <div class="service_info_cat" data-aos="fade-up" data-aos-delay="300">
-                            <img src="./Images/assets/interactivity.svg" alt="">
+                            <img src="./Images/assets/interactivity.svg" alt="interactivity-image">
                             <h3>USER INTERACTIVITY</h3>
-                            <p>Increase user interaction with vanilla Javascript using DOM manipulation.</p>
+                            <p>Increase user interaction of website with Javascript using DOM manipulation.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="projects sections" id="projects">
             <div class="container">
                 <h2>PROJECTS</h2>
                 <div class="projects_cat" data-aos="fade-up">
-                    <p data-filter="*" class="allBtn btn active_link">All</p>
+                    <p data-filter="*" class="allBtn btn active_linkIcon">All</p>
                     <p data-filter=" .fiter-website" class="webBtn btn">Website</p>
                     <p data-filter=".filter-page" class="pageBtn btn">Landing Page</p>
                     <p data-filter=".filter-app" class="appBtn btn">Apps</p>
                 </div>
                 <div class="projects_list">
                     <div class="project filter-page" data-aos="fade-up">
-                        <img src="./Images/assets/religion.png" alt="">
+                        <img src="./Images/assets/religion-min.png" alt="Religion-website">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Religion-Website" target="_blank">GITHUB LINK <i
                                     class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="project filter-website" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/spaces.png" alt="">
+                        <img src="./Images/assets/spaces-min.png" alt="Space-website">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Space-tourism-Website" target="_blank">GITHUB LINK
                                 <i class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="project filter-page" data-aos="fade-up" data-aos-delay="100">
-                        <img src="./Images/assets/easybank.png" alt="">
+                        <img src="./Images/assets/easybank-min.png" alt="Easybank-website">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/easybanklandingpage" target="_blank">GITHUB LINK
                                 <i class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="project filter-page" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/blogr.png" alt="">
+                        <img src="./Images/assets/blogr-min.png" alt="Blogr-website">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Blogr-Landing-Page" target="_blank">GITHUB LINK <i
                                     class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="project filter-page" data-aos="fade-up">
-                        <img src="./Images/assets/portfolio2.png" alt="">
+                        <img src="./Images/assets/portfolio2-min.png" alt="Portfolio-website">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Portfolio-Template2" target="_blank">GITHUB LINK
                                 <i class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="project filter-page" data-aos="fade-up" data-aos-delay="100">
-                        <img src="./Images/assets/portfolio1.png" alt="">
+                        <img src="./Images/assets/portfolio1-min.png" alt="Portfolio-website">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Portfolio-Template1" target="_blank">GITHUB LINK
                                 <i class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="project filter-page" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/crowdfunding.png" alt="">
+                        <img src="./Images/assets/crowdfunding-min.png" alt="CrowdFunding-website">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/CrowdFunding-Product-Page" target="_blank">GITHUB
                                 LINK
@@ -256,7 +257,7 @@
                         </div>
                     </div>
                     <div class="project filter-page" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/roomhomepage.png" alt="">
+                        <img src="./Images/assets/roomhomepage-min.png" alt="Room-Homepage-Master">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Room-Homepage-Master" target="_blank">GITHUB LINK
                                 <i class='bx bx-up-arrow-alt'></i></a>
@@ -264,7 +265,7 @@
                     </div>
 
                     <div class="project filter-app" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/staticjob.png" alt="">
+                        <img src="./Images/assets/staticjob-min.png" alt="Static-job-listing-site">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Static-job-listing-site" target="_blank">GITHUB
                                 LINK
@@ -272,7 +273,7 @@
                         </div>
                     </div>
                     <div class="project filter-app" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/timetracking.png" alt="">
+                        <img src="./Images/assets/timetracking-min.png" alt="Time-Tracking-Dashboard-">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Time-Tracking-Dashboard-" target="_blank">GITHUB
                                 LINK
@@ -280,21 +281,21 @@
                         </div>
                     </div>
                     <div class="project filter-app" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/tipcalculator.png" alt="">
+                        <img src="./Images/assets/tipcalculator-min.png" alt="Tip-Calculator-App">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Tip-Calculator-App" target="_blank">GITHUB LINK <i
                                     class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                     <div class="project filter-app" data-aos="fade-up" data-aos-delay="200">
-                        <img src="./Images/assets/statspreview.png" alt="">
+                        <img src="./Images/assets/statspreview-min.png" alt="Stats-preveiw-card-component">
                         <div class="project_info">
                             <a href="https://github.com/HAM-Developer/Stats-preveiw-card-component"
                                 target="_blank">GITHUB LINK <i class='bx bx-up-arrow-alt'></i></a>
                         </div>
                     </div>
                 </div>
-
+            </div>
         </section>
         <section class="contact sections" id="contact">
             <div class="container">
@@ -313,22 +314,21 @@
                             <i class='bx bx-envelope'></i>
                             <div class="contact_info_container">
                                 <h3>Email:</h3>
-                                <p>ham.solutions@gmail.com</p>
+                                <p>ham.solutions101@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact_address">
                             <i class='bx bx-current-location'></i>
                             <div class="contact_info_container">
                                 <h3>Address:</h3>
-                                <p>33.5N ,Rawalpindi</p>
+                                <p>33.5N Sixth Road,Rawalpindi</p>
                             </div>
                         </div>
                         <div class="location_map" id="map">
-
                         </div>
                     </div>
                     <div class="contact_form" data-aos="fade-up">
-                        <form action="">
+                        <form>
                             <div class="contact_form_input">
                                 <div class="contact_input">
                                     <label for="name">NAME :</label>
@@ -349,13 +349,10 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </section>
     </div>
-
-    <html>
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"

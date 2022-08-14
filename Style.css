@@ -1,14 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
 /*VARIABLES*/
 :root {
-  --sec-clr: #000000;
-  /* --pr-clr: #ffd700; */
-  /* --pr-clr: #ffd700; */
-  --pr-clr: #922121;
-  --bg-clr: #ffffff;
-  --links-clr: #0a1c33;
-  /* --anc-clr: #6f7180; */
-  --anc-clr: #ffffff;
-  --hover-clr: rgb(10, 133, 133);
+  --pr-blue: #149ddd;
+  --sec-blue: #05071a;
+  --ter-blue: #173b6c;
+  --white: #ffffff;
+  --light-gray: #e9e9e9;
+  --pr-gray: #c4c4c4;
+  --gray: #858585;
+  --dark-gray: #455a64;
+  --dark-blue: #0a1c33;
   --pr-font: sans-serif;
   --h2-ft-size: 2 0.4rem;
   --nav-width: 300px;
@@ -16,17 +17,14 @@
 * {
   margin: 0;
   padding: 0;
-  color: black;
   box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: var(--pr-font);
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
-  /* overflow-x: hidden; */
-  color: black;
 }
 .body {
   width: calc(100vw - var(--nav-width));
@@ -34,7 +32,6 @@ body {
 }
 /*LOADER*/
 .loader {
-  /* background-color: var(--sec-clr); */
   background-color: white;
   width: 100vw;
   height: 100vh;
@@ -58,7 +55,7 @@ body {
 }
 .circle {
   border-radius: 50%;
-  background-color: var(--pr-clr);
+  background-color: var(--sec-blue);
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -115,7 +112,7 @@ nav {
   left: 0;
   width: var(--nav-width);
   height: 100vh;
-  background-color: var(--sec-clr);
+  background-color: var(--sec-blue);
   text-align: center;
   transform: translateX(-100%);
   z-index: 100;
@@ -126,18 +123,28 @@ nav {
 .slide_navbar {
   transform: translateX(0%);
 }
+nav h2 {
+  color: var(--white);
+}
 
 nav > img {
   width: 8rem;
   height: 8rem;
   object-fit: contain;
-  margin: 1rem auto;
-  border: 5px solid #0c2444;
+  margin: 3rem auto 1rem auto;
+  border: 5px solid var(--pr-blue);
+  /* box-shadow: 0 0 25px 1px rgb(170, 215, 243); */
   border-radius: 5rem;
 }
-nav .social_links img {
+.social_links {
+  margin: 0.5rem 0;
+}
+.social_links a {
+  text-decoration: none;
+}
+.social_links img {
   cursor: pointer;
-  background-color: var(--links-clr);
+  background-color: var(--ter-blue);
   padding: 6px;
   width: 2rem;
   fill: white;
@@ -145,8 +152,8 @@ nav .social_links img {
   transition: all 0.5s ease-out;
   margin: 1rem 3px;
 }
-nav .social_links img:hover {
-  background-color: var(--pr-clr);
+.social_links img:hover {
+  background-color: var(--pr-blue);
 }
 nav .links {
   margin: 0.5rem;
@@ -156,10 +163,11 @@ nav .links {
 
 nav .links li {
   list-style-type: none;
+  margin: 0.75rem 0;
 }
 .link {
   text-decoration: none;
-  color: var(--anc-clr);
+  color: var(--pr-gray);
   transition: all 0.15s ease-in;
   display: flex;
   align-items: center;
@@ -167,14 +175,14 @@ nav .links li {
 .nav_linkIcon {
   transition: all 0.15s ease-in;
   font-size: 1.4rem;
-  color: white;
+  color: var(--pr-gray);
   margin: 0.75rem;
 }
 nav .links a:hover {
-  color: gray;
+  color: var(--white);
 }
 nav .links a:hover i {
-  color: gold;
+  color: var(--pr-blue);
 }
 nav footer {
   position: absolute;
@@ -184,15 +192,16 @@ nav footer {
 }
 nav footer p {
   margin: 0.45rem 0 0 0;
+  color: var(--white);
 }
 nav footer .copyright {
-  color: var(--pr-clr);
+  color: var(--pr-blue);
 }
 .active_link {
-  color: gray;
+  color: var(--white);
 }
 .active_linkIcon {
-  color: gold;
+  color: var(--pr-blue);
 }
 @media screen and (min-width: 1200px) {
   #sections {
@@ -210,7 +219,6 @@ nav footer .copyright {
   }
 }
 section.home {
-  /* filter: grayscale(0.7); */
   width: 100%;
   position: relative;
   height: 100vh;
@@ -253,7 +261,7 @@ section.home .bg_images img {
   width: 1.8rem;
   height: 2px;
   margin: 5px 0;
-  background-color: var(--pr-clr);
+  background-color: var(--pr-blue);
   transition: transform 0.25s ease-out;
 }
 /*HAMBURGER ANIMATION ON CLICK*/
@@ -270,11 +278,11 @@ section.home .bg_images img {
 /*SECTIONS*/
 section.sections {
   padding: 3.75rem 1rem 1rem 1rem;
-  background-color: var(--bg-clr);
+  background-color: var(--white);
 }
 section.sections h2 {
   margin: 1rem 0 3rem 0;
-  color: var(--pr-clr);
+  color: var(--ter-blue);
 }
 /*HOME SECTION*/
 section .intro {
@@ -298,18 +306,18 @@ section .intro {
   font-family: var(--pr-font);
 }
 section .intro h1 span {
-  color: var(--pr-clr);
+  color: var(--pr-blue);
   border-bottom: none;
 }
 section .intro p span:nth-child(1) {
   padding-bottom: 5px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--pr-blue);
   color: white;
 }
 section .intro p span:nth-child(2) {
   animation: blink;
   animation-duration: 0.75s;
-  color: red;
+  color: var(--pr-blue);
   font-weight: bolder;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -324,7 +332,6 @@ section .intro p span:nth-child(2) {
   }
 }
 section.about {
-  color: white;
   padding-left: 0;
   padding-right: 0;
 }
@@ -334,7 +341,7 @@ section.about .about_me {
 section.about h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: var(--pr-clr);
+  color: var(--ter-blue);
 }
 section.about img {
   width: 100%;
@@ -354,10 +361,10 @@ section .about_me_info li p {
   margin: 0rem;
 }
 section .about_me_info span {
-  color: lightgray;
+  color: var(--gray);
 }
 section .about_me_info i {
-  color: var(--pr-clr);
+  color: var(--pr-blue);
 }
 section.about p {
   line-height: 1.75rem;
@@ -396,7 +403,7 @@ section.about .about_skills {
   width: 100%;
   margin-top: 1rem;
   padding: 1rem 0;
-  background-image: url("./Images/assets/Futuristic\ touch\ screen\ UI\ by\ BeOGraphic\ on….jpg");
+  background-image: url("./Images/assets/backgroundImage.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -433,11 +440,11 @@ section.about .skill_progress circle {
   stroke-linecap: round;
 }
 section.about .skill_progress svg circle.circle0 {
-  stroke: #6f7180;
+  stroke: lightgray;
   stroke-dashoffset: 0;
 }
 .circle_anime {
-  stroke: var(--pr-clr);
+  stroke: var(--pr-blue);
   stroke-dashoffset: 414;
   stroke-dasharray: 414;
 }
@@ -457,20 +464,9 @@ section.about .skill_progress svg circle.circle0 {
   -webkit-animation: skillbar3 1.5s linear forwards;
   animation: skillbar3 1.5s linear forwards;
 }
-@-webkit-keyframes skillbar0 {
-  100% {
-    stroke-dashoffset: 45;
-  }
-}
-
 @keyframes skillbar0 {
   100% {
     stroke-dashoffset: 45;
-  }
-}
-@-webkit-keyframes skillbar1 {
-  100% {
-    stroke-dashoffset: 65;
   }
 }
 @keyframes skillbar1 {
@@ -478,19 +474,9 @@ section.about .skill_progress svg circle.circle0 {
     stroke-dashoffset: 65;
   }
 }
-@-webkit-keyframes skillbar2 {
-  100% {
-    stroke-dashoffset: 105;
-  }
-}
 @keyframes skillbar2 {
   100% {
     stroke-dashoffset: 105;
-  }
-}
-@-webkit-keyframes skillbar3 {
-  100% {
-    stroke-dashoffset: 125;
   }
 }
 @keyframes skillbar3 {
@@ -579,15 +565,13 @@ section.about h3 {
   }
 }
 /*SERVICES SECTION*/
-section.services .service_info h1 {
-  margin: 0rem 0 2rem 0;
-}
 section.services .service_info_cat {
   margin-top: 3rem;
   text-align: center;
 }
 section.services .service_info_cat h3 {
-  font-weight: 400;
+  font-weight: 600;
+  color: var(--ter-blue);
 }
 section.services .service_info_cat h3,
 p {
@@ -598,7 +582,6 @@ section.services .service_info_cat p {
   width: 95%;
   margin: 1rem auto;
   line-height: 1.5rem;
-  color: gray;
 }
 section.services .service_info_cat img {
   width: 70%;
@@ -622,8 +605,8 @@ section.projects .projects_cat {
   width: 20rem;
   border-radius: 24px;
   margin: 1rem auto 2rem auto;
-  box-shadow: 0 0 12px 2px rgb(207, 207, 207);
-  padding: 1rem 1.25rem;
+  box-shadow: 0 0 12px 1px var(--light-gray);
+  padding: 0.85rem 1.5rem;
 }
 
 section.projects .projects_cat p {
@@ -631,9 +614,10 @@ section.projects .projects_cat p {
   transition: all 0.25s ease-out;
   cursor: pointer;
   margin: 0;
+  font-size: 0.95rem;
 }
 section.projects .projects_cat p:hover {
-  color: var(--pr-clr);
+  color: var(--pr-blue);
 }
 section.projects .projects_list {
   width: 100%;
@@ -673,20 +657,15 @@ section.projects .project_info {
 section.projects .project:hover .project_info {
   opacity: 1;
 }
-section.projects .project_info p {
-  color: blue;
-  transform: translateY(-20px);
-  position: relative;
-  transition: transform 0.25s ease-out;
-}
 section.projects .project_info a {
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
   letter-spacing: 0.2rem;
-  background-color: aquamarine;
+  background-color: var(--pr-blue);
   display: inline-block;
   width: 10.5rem;
+  color: var(--white);
   border-radius: 5px;
   position: absolute;
   top: 55%;
@@ -695,7 +674,10 @@ section.projects .project_info a {
   transition: all 0.25s ease-out;
 }
 section.projects .project_info a:hover {
-  background-color: azure;
+  background-color: var(--pr-blue);
+}
+section.projects .project_info a:hover i {
+  animation: none;
 }
 section.projects .project:hover i {
   animation: link 0.75s linear infinite;
@@ -703,15 +685,15 @@ section.projects .project:hover i {
 @keyframes link {
   0% {
     transform: translateY(0px);
-    color: red;
+    color: white;
   }
   50% {
     transform: translateY(-4px);
-    color: blue;
+    color: var(--pr-blue);
   }
   100% {
     transform: translateY(0px);
-    color: violet;
+    color: white;
   }
 }
 
@@ -747,11 +729,14 @@ section.projects .project:hover .project_info a {
 }
 section.contact .contact_info {
   margin: 1rem 0;
-  background-color: var(--pr-clr);
+  background-color: var(--ter-blue);
   color: white;
 }
 section.contact > p {
   margin: 2rem auto;
+}
+section.contact .contact_container {
+  box-shadow: 0 0 30px 10px rgb(241, 241, 241);
 }
 section.contact .contact_info,
 section.contact .contact_form {
@@ -765,6 +750,9 @@ section.contact .contact_phone,
   justify-content: flex-start;
   align-items: center;
   margin: 2rem auto;
+}
+section.contact .social_links {
+  margin: 1rem 0;
 }
 section.contact .contact_info_container {
   margin-left: 1rem;
@@ -791,9 +779,7 @@ section.contact i {
   border: 1px solid white;
   padding: 0.5rem;
 }
-section.contact .contact_form {
-  background-color: lightgray;
-}
+
 section.contact form {
   text-align: left;
   border-radius: 5px;
@@ -803,16 +789,16 @@ section.contact input {
   padding: 1rem 1rem 1rem 0.5rem;
   margin: 1rem auto;
   border: none;
-  border-bottom: 1px solid #ff2021;
+  border-bottom: 1px solid var(--pr-blue);
   width: 100%;
   outline: none;
-  color: lightgray;
+  color: var(--gray);
 }
 section.contact input:focus {
-  border-bottom: 1px solid #3c0e86;
+  border-bottom: 1px solid var(--ter-blue);
 }
 section.contact input::placeholder {
-  color: darkgray;
+  color: var(--gray);
 }
 section.contact textarea {
   padding: 1rem;
@@ -820,22 +806,24 @@ section.contact textarea {
   display: inline-block;
   margin: 1rem auto;
   border: none;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--pr-blue);
   width: 100%;
 }
 section.contact textarea:focus {
-  border-bottom: 1px solid #3c0e86;
+  border-bottom: 1px solid var(--ter-blue);
 }
 section.contact label {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: bolder;
+  color: var(--ter-blue);
 }
 section.contact button {
   display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  padding: 1.5rem 2.5rem;
+  border-radius: 35px;
   margin: auto;
-  background-color: var(--sec-clr);
+  font-size: 1rem;
+  background-color: var(--ter-blue);
   color: white;
   border: none;
   cursor: pointer;
@@ -878,18 +866,21 @@ section.contact button {
   }
   section.contact .contact_info {
     width: 40%;
-    height: 38rem;
+    height: 40rem;
     margin: 0;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  section.contact .contact_form_message {
+    margin: 2rem 0;
   }
 
   section.contact .contact_form {
-    height: 38rem;
+    height: 40rem;
     width: 60%;
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 10px 10px 0px;
     margin: 0;
   }
   section.contact button {
-    margin: 0;
+    margin: 1rem 0 0 0;
   }
 }

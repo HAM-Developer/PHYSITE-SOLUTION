@@ -13,6 +13,7 @@ new PureCounter({
 const lines = document.querySelectorAll(".line")
 const hamburger = document.querySelector('.hamburger')
 const navBar = document.querySelector('nav')
+const rootCss = document.querySelector(':root')
 hamburger.addEventListener('click', () => {
     navBar.classList.toggle('slide_navbar')
     for (let i = 0; i < lines.length; i++) {
@@ -45,7 +46,7 @@ window.addEventListener("load", (e) => {
     loader.remove()
 })
 //Heading Animation
-const texts = ["Frontend Developer", "Freelancer",]
+const texts = ["Frontend Web Developer", "Freelancer",]
 let count = 0
 let index = 0
 let currentText = ""
@@ -123,19 +124,19 @@ function filterProduct() {
     allData.forEach(data => {
         btns[0].addEventListener('click', () => {
             data.style.display = "block"
-            btns[0].classList.add('active_link')
-            btns[1].classList.remove('active_link')
-            btns[2].classList.remove('active_link')
-            btns[3].classList.remove('active_link')
+            btns[0].classList.add('active_linkIcon')
+            btns[1].classList.remove('active_linkIcon')
+            btns[2].classList.remove('active_linkIcon')
+            btns[3].classList.remove('active_linkIcon')
         })
         //website filter
         btns[1].addEventListener("click", () => {
             if (!data.classList.contains('filter-website')) {
                 data.style.display = "none"
-                btns[0].classList.remove('active_link')
-                btns[1].classList.add('active_link')
-                btns[2].classList.remove('active_link')
-                btns[3].classList.remove('active_link')
+                btns[0].classList.remove('active_linkIcon')
+                btns[1].classList.add('active_linkIcon')
+                btns[2].classList.remove('active_linkIcon')
+                btns[3].classList.remove('active_linkIcon')
 
             }
             else {
@@ -146,10 +147,10 @@ function filterProduct() {
         btns[2].addEventListener("click", () => {
             if (!data.classList.contains('filter-page')) {
                 data.style.display = "none"
-                btns[0].classList.remove('active_link')
-                btns[1].classList.remove('active_link')
-                btns[2].classList.add('active_link')
-                btns[3].classList.remove('active_link')
+                btns[0].classList.remove('active_linkIcon')
+                btns[1].classList.remove('active_linkIcon')
+                btns[2].classList.add('active_linkIcon')
+                btns[3].classList.remove('active_linkIcon')
 
             }
             else {
@@ -160,10 +161,10 @@ function filterProduct() {
         btns[3].addEventListener("click", () => {
             if (!data.classList.contains('filter-app')) {
                 data.style.display = "none"
-                btns[0].classList.remove('active_link')
-                btns[1].classList.remove('active_link')
-                btns[2].classList.remove('active_link')
-                btns[3].classList.add('active_link')
+                btns[0].classList.remove('active_linkIcon')
+                btns[1].classList.remove('active_linkIcon')
+                btns[2].classList.remove('active_linkIcon')
+                btns[3].classList.add('active_linkIcon')
 
             }
             else {
