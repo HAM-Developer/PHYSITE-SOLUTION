@@ -26,10 +26,7 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 }
-.body {
-  width: calc(100vw - var(--nav-width));
-  float: right;
-}
+
 /*LOADER*/
 .loader {
   background-color: white;
