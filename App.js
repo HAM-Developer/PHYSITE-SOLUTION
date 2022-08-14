@@ -13,7 +13,6 @@ new PureCounter({
 const lines = document.querySelectorAll(".line")
 const hamburger = document.querySelector('.hamburger')
 const navBar = document.querySelector('nav')
-const rootCss = document.querySelector(':root')
 hamburger.addEventListener('click', () => {
     navBar.classList.toggle('slide_navbar')
     for (let i = 0; i < lines.length; i++) {
@@ -174,7 +173,6 @@ function filterProduct() {
     })
 }
 filterProduct()
-//ACTIVE FILTER LINKS
 
 //LOCATION ON MAP
 // Initialize and add the map
