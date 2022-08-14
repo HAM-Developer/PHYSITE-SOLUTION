@@ -132,9 +132,7 @@ nav > img {
   border: 5px solid var(--pr-blue);
   border-radius: 5rem;
 }
-.social_links {
-  margin: 0.5rem 0;
-}
+
 .social_links a {
   text-decoration: none;
 }
@@ -159,7 +157,6 @@ nav .links {
 
 nav .links li {
   list-style-type: none;
-  margin: 0.75rem 0;
 }
 .link {
   text-decoration: none;
@@ -202,6 +199,12 @@ nav footer .copyright {
 @media screen and (min-width: 1200px) {
   #sections {
     margin-left: 300px;
+  }
+  .social_links {
+    margin: 0.5rem 0;
+  }
+  nav .links li {
+    margin: 0.75rem 0;
   }
   .logo,
   .hamburger {
