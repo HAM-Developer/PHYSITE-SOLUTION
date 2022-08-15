@@ -303,6 +303,7 @@ section .intro {
   color: white;
   font-size: 1.4rem;
   font-family: var(--pr-font);
+  line-height: 2.2rem;
 }
 section .intro h1 span {
   color: var(--pr-blue);
